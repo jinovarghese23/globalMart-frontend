@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container-fluid d-flex justify-content-center align-items-center flex-column">
+    <h3 class="mt-5 text-danger">Delivery details</h3>
+    <div class="row w-100">
+        <div class="col-md-6 d-flex justify-content-center">
+            <img width="80%"
+                src="https://img.freepik.com/free-photo/red-delivery-car-deliver-express-shipping-fast-delivery-background-3d-rendering-illustration_56104-1910.jpg?semt=ais_hybrid"
+                alt="">
+        </div>
+        <div class="col-md-6">
+            <form [formGroup]="checkOutForm" class="rounded border shadow p-5 mt-5 form-control">
+                <div>
+                    <input type="text" class="form-control mb-2" placeholder="Please enter your name">
+                </div>
+                <div>
+                    <input type="text" class="form-control mb-2" placeholder="House/Flat number">
+                </div>
+                <div>
+                    <input type="text" class="form-control mb-2" placeholder="Place">
+                </div>
+                <div>
+                    <input type="text" class="form-control mb-2" placeholder="Landmark">
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-warning">Cancel</button>
+                    <button class="btn btn-success">Proceed to payment</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
